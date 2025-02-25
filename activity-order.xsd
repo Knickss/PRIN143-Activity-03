@@ -4,3 +4,12 @@
   targetNamespace="https://www.example.com"
   xmlns="https://www.example.com"
   elementFormDefault="qualified">
+
+  <xs:element name="OrderInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderId" type="xs:int"/>
+                <xs:element name="OrderDateTime" type="xs:dateTime"/>
+                <xs:element name="OrderItems">
+                    <xs:complexType>
+                        <xs:sequence>
